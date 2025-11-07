@@ -1,0 +1,32 @@
+using System;
+namespace Programa{
+class Program{
+static void Main(){
+string nome1,nome2;
+double preco, dinheiro, troco;
+int qtd;
+
+Console.WriteLine("Preco unitario do produto: ");
+preco = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Quantidade comprada: ");
+qtd = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Dinheiro recebido: ");
+dinheiro = int.Parse(Console.ReadLine());
+
+troco = dinheiro - (preco * qtd);
+
+if (troco < 0)
+{
+    troco=(-troco);
+    Console.WriteLine("Faltam R$ "+troco.ToString("F2")+" para a compra");
+}
+else
+{
+    Console.WriteLine("TROCO = R$ "+troco.ToString("F2")+"");
+}
+
+}
+}
+}

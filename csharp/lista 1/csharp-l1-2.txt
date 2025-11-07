@@ -1,0 +1,26 @@
+using System;
+namespace Programa{
+class Program{
+static void Main(){
+string nome1,nome2;
+int idade1,idade2,idadeM;
+
+Console.WriteLine("inserir nome da primeira pessoa: ");
+nome1 = Console.ReadLine();
+Console.WriteLine("inserir idade da primeira pessoa: ");
+idade1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("inserir nome da segunda pessoa: ");
+nome2 = Console.ReadLine();
+Console.WriteLine("inserir idade da segunda pessoa: ");
+idade2 = int.Parse(Console.ReadLine());
+
+idadeM = (idade1 + idade2)/2;
+
+Console.WriteLine("(Pessoa 1) Nome: "+nome1+"; Idade: "+idade1+"");
+Console.WriteLine("(Pessoa 2) Nome: "+nome2+"; Idade: "+idade2+"");
+Console.WriteLine("Idade media: "+idadeM+"");
+
+}
+}
+}
